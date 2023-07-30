@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat&family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #212121;
+}
+
+button {
+    color: #000000;
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    /* width: 5; */
+
+}
+button:hover {
+    background-color: rgb(203, 6, 144);
+    color: #fff;
+}
+
+.card-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.card {
+    background-color: #000d5f;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width: 19%;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media (max-width:499px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 99%;
+    }
+}
