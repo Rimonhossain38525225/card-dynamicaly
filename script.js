@@ -5,7 +5,7 @@
 // console.log(total)
 // console.log(1+2+3+4+5+6+7+8)
 
-const button = document.querySelector("button")
+const button = document.querySelector("button");
 
 function createCard(num) {
     // find and create Element 
@@ -16,6 +16,7 @@ function createCard(num) {
     const cardBody = document.createElement("div");
     const cardH2 = document.createElement("h2");
     const p = document.createElement("p");
+    const span1 = document.createElement("span");
 
     // set all class 
     card.setAttribute("class","card");
@@ -23,8 +24,10 @@ function createCard(num) {
     cardBody.setAttribute("class","card-body");
 
     // set text node and others Element
+    span1.appendChild(document.createTextNode(" ♥ ♥"));
     cardH2.appendChild(document.createTextNode(`card ${num}`));
     p.appendChild(document.createTextNode(`I Love You ${num}`));
+    p.appendChild(span1);
     cardBody.appendChild(p);
     // cardTitle.appendChild(cardH2);
     // card.appendChild(cardTitle);
