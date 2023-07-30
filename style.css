@@ -55,6 +55,7 @@ p span {
     color: red;
     font-size: 1.7rem;
 }
+
 @media (max-width:499px) {
     .card-container {
         flex-direction: column;
